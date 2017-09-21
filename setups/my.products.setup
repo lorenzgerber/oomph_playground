@@ -186,6 +186,5 @@
       </setupTask>
     </version>
   </product>
-  <product
-    href="setups/net.openchrom.ide.setup#/"/>
+  <product label="Openchrom SDK" href="setups/net.openchrom.ide.setup#/"/>
 </setup:ProductCatalog>
