@@ -26,6 +26,7 @@
       vm="true"/>
   <product name="epp.package.standard"
       label="Eclipse Standard/SDK">
+
     <version
         name="latest"
         label="Latest (Mars)">
@@ -185,4 +186,6 @@
       </setupTask>
     </version>
   </product>
+  <product
+    href="setups/net.openchrom.ide.setup#/"/>
 </setup:ProductCatalog>
