@@ -7,7 +7,7 @@
     xmlns:setup.targlets="http://www.eclipse.org/oomph/setup/targlets/1.0"
     xsi:schemaLocation="http://www.eclipse.org/oomph/setup/targlets/1.0 http://git.eclipse.org/c/oomph/org.eclipse.oomph.git/plain/setups/models/SetupTarglets.ecore"
     name="org.eclipse"
-    label="Alex-Projects">
+    label="Lorenz-Projects">
   <setupTask
       xsi:type="setup:CompoundTask"
       name="Global Variables">
@@ -334,7 +334,7 @@
       </repositoryList>
     </targlet>
   </setupTask>
-  <project name="Container1" label="Alex' Github Projects">
+  <project name="Container1" label="Lorenzs' Github Projects">
     <project href="https://raw.githubusercontent.com/AKSW/Xturtle/develop/xturtleDev.setup#/"/>
     <project href="https://raw.githubusercontent.com/nittka/terminology/master/terminologyDev.setup#/"/>
   </project>
