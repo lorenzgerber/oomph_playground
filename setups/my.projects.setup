@@ -346,6 +346,8 @@
         href="https://raw.githubusercontent.com/nittka/oomph-playground/master/setups/setups/xtextSDKRun.setup#/"/>
     <project
         href="setups/xtextTools.setup#/"/>
+    <project
+        href="setups/userSelect.setup#/"/>
   </project>
   <description>Alle Projekte, die bei einer Umleitung auf Alex-Projekte angezeigt werden sollen</description>
 </setup:ProjectCatalog>
