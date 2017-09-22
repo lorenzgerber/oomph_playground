@@ -338,7 +338,7 @@
     <project href="https://raw.githubusercontent.com/AKSW/Xturtle/develop/xturtleDev.setup#/"/>
     <project href="https://raw.githubusercontent.com/nittka/terminology/master/terminologyDev.setup#/"/>
   </project>
-  <project name="Container2"
+  <project name="Stuff..."
       label="Oomph Playground Projects">
     <project
         href="setups/emptyProject.setup#/"/>
@@ -349,5 +349,5 @@
     <project
         href="setups/userSelect.setup#/"/>
   </project>
-  <description>Alle Projekte, die bei einer Umleitung auf Alex-Projekte angezeigt werden sollen</description>
+  <description>These are the projects to be shown from the own project container</description>
 </setup:ProjectCatalog>
