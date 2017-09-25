@@ -6,7 +6,7 @@
   xmlns:setup="http://www.eclipse.org/oomph/setup/1.0"
   xmlns:setup.p2="http://www.eclipse.org/oomph/setup/p2/1.0"
   name="crapcakey"
-  label="OpenChrom - IDE">
+  label="C R A P C A K E - IDE">
   <version
       name="latest"
       label="Latest (Mars)">
