@@ -55,6 +55,14 @@
           value="2"/>
       <description></description>
     </setupTask>
+    <setupTask
+        xsi:type="setup:EclipseIniTask"
+        id=""
+        option="-Duseroption.create.resource"
+        value="=${useroption.create.resource.option}"
+        vm="true">
+      <description></description>
+    </setupTask>
   </setupTask>
   <setupTask
       xsi:type="setup:CompoundTask"
@@ -203,6 +211,13 @@
         xsi:type="setup:VariableTask"
         name="eclipse.platform"
         value="Neon"/>
+    <setupTask
+        xsi:type="setup:VariableTask"
+        type="BOOLEAN"
+        name="useroption.create.resource.option"
+        defaultValue="false"
+        storageURI="scope://Installation"
+        label="Create Resource:"/>
   </setupTask>
   <setupTask
       xsi:type="setup:CompoundTask"
@@ -227,6 +242,15 @@
         encoding="UTF-8">
       <description>Initialize JDT's package explorer to show working sets as its root objects</description>
     </setupTask>
+    <setupTask
+        xsi:type="setup:ResourceCreationTask"
+        excludedTriggers="BOOTSTRAP"
+        filter="(useroption.create.resource=true)"
+        content="This resource was created you checked the variable&#xA;which caused the vm option to be set to true&#xA;which caused the filter of the resource creation task to match."
+        targetURL="${workspace.location|uri}/test.txt"
+        encoding="UTF-8">
+      <description>This task is executed depending on the user's choice on the variable page.</description>
+    </setupTask>s
   </setupTask>
   <setupTask
       xsi:type="setup:CompoundTask"
@@ -253,30 +277,8 @@
     <sourceLocator
         rootFolder="${git.clone.location}/${utils}"/>
   </setupTask>
-  <setupTask
-      xsi:type="setup:VariableTask"
-      type="BOOLEAN"
-      name="useroption.create.resource.option"
-      defaultValue="false"
-      storageURI="scope://Installation"
-      label="Create Resource:"/>
-  <setupTask
-      xsi:type="setup:EclipseIniTask"
-      id=""
-      option="-Duseroption.create.resource"
-      value="=${useroption.create.resource.option}"
-      vm="true">
-    <description></description>
-  </setupTask>
-  <setupTask
-      xsi:type="setup:ResourceCreationTask"
-      excludedTriggers="BOOTSTRAP"
-      filter="(useroption.create.resource=true)"
-      content="This resource was created you checked the variable&#xA;which caused the vm option to be set to true&#xA;which caused the filter of the resource creation task to match."
-      targetURL="${workspace.location|uri}/test.txt"
-      encoding="UTF-8">
-    <description>This task is executed depending on the user's choice on the variable page.</description>
-  </setupTask>
+
+
   <version name="neon"
       label="Neon"
       requiredJavaVersion="1.8">
