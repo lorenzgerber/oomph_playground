@@ -277,8 +277,6 @@
     <sourceLocator
         rootFolder="${git.clone.location}/${utils}"/>
   </setupTask>
-
-
   <version name="neon"
       label="Neon"
       requiredJavaVersion="1.8">
