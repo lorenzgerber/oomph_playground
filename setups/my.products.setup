@@ -24,7 +24,7 @@
       option="-Doomph.setup"
       value="=true"
       vm="true"/>
-  
+
   <product label="Crapcake" href="setups/standardProduct.setup#/"/>
   <product label="Openchrom SDK" href="setups/net.openchrom.ide.setup#/"/>
 </setup:ProductCatalog>
