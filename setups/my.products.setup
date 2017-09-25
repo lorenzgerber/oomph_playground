@@ -24,7 +24,38 @@
       option="-Doomph.setup"
       value="=true"
       vm="true"/>
+  <product name="epp.package.standard"
+      label="Eclipse Standard/SDK">
 
+    <version
+        name="Juno"
+        label="Juno with Xtext 2.3">
+      <setupTask
+          xsi:type="setup.p2:P2Task">
+        <requirement
+            name="org.eclipse.platform.feature.group"/>
+        <requirement
+            name="org.eclipse.rcp.feature.group"/>
+        <requirement
+            name="org.eclipse.jdt.feature.group"/>
+        <requirement
+            name="org.eclipse.pde.feature.group"/>
+        <requirement
+            name="epp.package.rcp"/>
+        <requirement
+            name="org.eclipse.xtext.sdk.feature.group"
+            versionRange="[2.3.0,2.4.0)"/>
+        <repository
+            url="http://download.eclipse.org/technology/epp/packages/juno"/>
+        <repository
+            url="http://download.eclipse.org/releases/juno/201303010900/"/>
+        <repository
+            url="http://download.eclipse.org/modeling/tmf/xtext/updates/composite/releases/"/>
+        <repository
+            url="http://download.itemis.com/updates/releases/2.1.1"/>
+      </setupTask>
+    </version>
+  </product>
   <product label="Crapcake" href="setups/standardProduct.setup#/"/>
   <product label="Openchrom SDK" href="setups/net.openchrom.ide.setup#/"/>
 </setup:ProductCatalog>
