@@ -217,7 +217,7 @@
         name="useroption.create.resource.option"
         defaultValue="false"
         storageURI="scope://Installation"
-        label="Create Resource:"/>
+        label="Get coffee served during installation:"/>
   </setupTask>
   <setupTask
       xsi:type="setup:CompoundTask"
