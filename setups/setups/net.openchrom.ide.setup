@@ -229,7 +229,7 @@
     <setupTask
         xsi:type="setup:VariableTask"
         name="make.eclipse.great.again.option"
-        defaultValue="great"
+        defaultValue="little"
         storageURI="scope://Workspace"
         label="State of the matter">
       <choice
