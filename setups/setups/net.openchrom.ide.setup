@@ -228,11 +228,21 @@
         label="Get coffee served during installation:"/>
     <setupTask
         xsi:type="setup:VariableTask"
-        type="BOOLEAN"
         name="make.eclipse.great.again.option"
-        defaultValue="false"
-        storageURI="scope://Installation"
-        label="Make Eclipse greate again"/>
+        defaultValue="great"
+        storageURI="scope://Workspace"
+        label="${scope.project.label} Target Platform">
+      <choice
+          value="great"
+          label="yes, make it great again"/>
+      <choice
+          value="Luna"
+          label="Eclipse Luna - 4.4"/>
+      <choice
+          value="None"
+          label="None"/>
+      <description>How great</description>
+    </setupTask>
 
 
   </setupTask>
