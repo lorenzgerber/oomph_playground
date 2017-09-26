@@ -62,6 +62,13 @@
         value="=${useroption.create.resource.option}"
         vm="true">
       <description></description>
+    <setupTask
+        xsi:type="setup:EclipseIniTask"
+        id=""
+        option="-Duseroption.create.crapcake"
+        value="=${useroption.create.crapcake.option}"
+        vm="true">
+      <description></description>
     </setupTask>
   </setupTask>
   <setupTask
