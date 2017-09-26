@@ -220,9 +220,16 @@
         label="Get coffee served during installation:"/>
     <setupTask
         xsi:type="setup:VariableTask"
+        type="BOOLEAN"
+        name="useroption.create.crap.option"
+        defaultValue="false"
+        storageURI="scope://Installation"
+        label="Get crap served during installation:"/>
+    <setupTask
+        xsi:type="setup:VariableTask"
         name="eclipse.super.crap"
         defaultValue="crap"
-        storageURI="scope://Workspace"
+        storageURI="scope://Installation"
         label="${scope.project.label} Crap Option">
       <choice
           value="Mars"
