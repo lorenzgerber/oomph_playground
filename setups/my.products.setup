@@ -20,6 +20,38 @@
         url="http://download.eclipse.org/modeling/emf/emf/updates/2.10/core/R201405190339"/>
   </setupTask>
   <setupTask
+      xsi:type="setup:VariableTask"
+      name="eclipse.target.platform"
+      defaultValue="Luna"
+      storageURI="scope://Workspace"
+      label="${scope.project.label} Target Platform">
+    <choice
+        value="Mars"
+        label="Eclipse Mars - 4.5"/>
+    <choice
+        value="Luna"
+        label="Eclipse Luna - 4.4"/>
+    <choice
+        value="Kepler"
+        label="Eclipse Kepler - 4.3"/>
+    <choice
+        value="Juno"
+        label="Eclipse Juno - 4.2"/>
+    <choice
+        value="Indigo"
+        label="Eclipse Indigo - 3.7"/>
+    <choice
+        value="Helios"
+        label="Eclipse Helios - 3.6"/>
+    <choice
+        value="Galileo"
+        label="Eclipse Galileo - 3.5"/>
+    <choice
+        value="None"
+        label="None"/>
+    <description>Choose the compatibly level of the target platform for ${scope.project.label}</description>
+  </setupTask>
+  <setupTask
       xsi:type="setup:EclipseIniTask"
       option="-Doomph.setup"
       value="=true"

@@ -34,32 +34,6 @@
     </setupTask>
   </version>
   <version
-      name="latest.released"
-      label="Latest Release (Luna)">
-    <setupTask
-        xsi:type="setup.p2:P2Task">
-      <requirement
-          name="epp.package.standard"
-          versionRange="[4.4.0,4.5.0)"/>
-      <requirement
-          name="org.eclipse.platform.feature.group"
-          versionRange="[4.4.0,4.5.0)"/>
-      <requirement
-          name="org.eclipse.rcp.feature.group"
-          versionRange="[4.4.0,4.5.0)"/>
-      <requirement
-          name="org.eclipse.jdt.feature.group"
-          versionRange="[3.10.0,3.11.0)"/>
-      <requirement
-          name="org.eclipse.pde.feature.group"
-          versionRange="[3.10.0,3.11.0)"/>
-      <repository
-          url="http://download.eclipse.org/technology/epp/packages/luna"/>
-      <repository
-          url="http://download.eclipse.org/releases/luna/201406250900"/>
-    </setupTask>
-  </version>
-  <version
       name="mars"
       label="Mars">
     <setupTask
@@ -83,86 +57,6 @@
           url="http://download.eclipse.org/technology/epp/packages/mars"/>
       <repository
           url="http://download.eclipse.org/releases/mars/201408221000"/>
-    </setupTask>
-  </version>
-  <version
-      name="luna"
-      label="Luna">
-    <setupTask
-        xsi:type="setup.p2:P2Task">
-      <requirement
-          name="epp.package.standard"
-          versionRange="[4.4.0,4.5.0)"/>
-      <requirement
-          name="org.eclipse.platform.feature.group"
-          versionRange="[4.4.0,4.5.0)"/>
-      <requirement
-          name="org.eclipse.rcp.feature.group"
-          versionRange="[4.4.0,4.5.0)"/>
-      <requirement
-          name="org.eclipse.jdt.feature.group"
-          versionRange="[3.10.0,3.11.0)"/>
-      <requirement
-          name="org.eclipse.pde.feature.group"
-          versionRange="[3.10.0,3.11.0)"/>
-      <repository
-          url="http://download.eclipse.org/technology/epp/packages/luna"/>
-      <repository
-          url="http://download.eclipse.org/releases/luna/201406250900"/>
-    </setupTask>
-  </version>
-  <version
-      name="kepler"
-      label="Kepler">
-    <setupTask
-        xsi:type="setup.p2:P2Task">
-      <requirement
-          name="epp.package.standard"
-          versionRange="[2.0.0,2.1.0)"/>
-      <requirement
-          name="org.eclipse.platform.feature.group"
-          versionRange="[4.3.0,4.4.0)"/>
-      <requirement
-          name="org.eclipse.rcp.feature.group"
-          versionRange="[4.3.0,4.4.0)"/>
-      <requirement
-          name="org.eclipse.jdt.feature.group"
-          versionRange="[3.9.0,3.10.0)"/>
-      <requirement
-          name="org.eclipse.pde.feature.group"
-          versionRange="[3.9.0,3.10.0)"/>
-      <repository
-          url="http://download.eclipse.org/technology/epp/packages/kepler"/>
-      <repository
-          url="http://download.eclipse.org/releases/kepler/201402280900"/>
-    </setupTask>
-  </version>
-  <version
-      name="Juno"
-      label="Juno with Xtext 2.3">
-    <setupTask
-        xsi:type="setup.p2:P2Task">
-      <requirement
-          name="org.eclipse.platform.feature.group"/>
-      <requirement
-          name="org.eclipse.rcp.feature.group"/>
-      <requirement
-          name="org.eclipse.jdt.feature.group"/>
-      <requirement
-          name="org.eclipse.pde.feature.group"/>
-      <requirement
-          name="epp.package.rcp"/>
-      <requirement
-          name="org.eclipse.xtext.sdk.feature.group"
-          versionRange="[2.3.0,2.4.0)"/>
-      <repository
-          url="http://download.eclipse.org/technology/epp/packages/juno"/>
-      <repository
-          url="http://download.eclipse.org/releases/juno/201303010900/"/>
-      <repository
-          url="http://download.eclipse.org/modeling/tmf/xtext/updates/composite/releases/"/>
-      <repository
-          url="http://download.itemis.com/updates/releases/2.1.1"/>
     </setupTask>
   </version>
 </setup:Product>
