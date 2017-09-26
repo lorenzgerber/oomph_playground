@@ -218,36 +218,6 @@
         defaultValue="false"
         storageURI="scope://Installation"
         label="Get coffee served during installation:"/>
-    <setupTask
-        xsi:type="setup:VariableTask"
-        name="eclipse.super.crap"
-        defaultValue="crap"
-        storageURI="scope://Installation"
-        label="${scope.project.label} Crap Option">
-      <choice
-          value="Mars"
-          label="Some Crap"/>
-      <choice
-          value="Luna"
-          label="Quite a bit more crap"/>
-      <choice
-          value="Kepler"
-          label="reasonable amounts of crap"/>
-      <choice
-          value="Juno"
-          label="crap up to the roof"/>
-      <choice
-          value="Indigo"
-          label="humangous amounts of crap"/>
-      <choice
-          value="Helios"
-          label="incredibly humangous amounts of crap"/>
-      <choice
-          value="Galileo"
-          label="crap-a-delic"/>
-      <choice
-          value="None"
-          label="crapster"/>
   </setupTask>
   <setupTask
       xsi:type="setup:CompoundTask"
