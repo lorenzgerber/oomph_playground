@@ -218,6 +218,13 @@
         defaultValue="false"
         storageURI="scope://Installation"
         label="Get coffee served during installation:"/>
+    <setupTask
+        xsi:type="setup:VariableTask"
+        type="BOOLEAN"
+        name="useroption.create.crapcake.option"
+        defaultValue="false"
+        storageURI="scope://Installation"
+        label="Get crapcake served during installation:"/>
   </setupTask>
   <setupTask
       xsi:type="setup:CompoundTask"
