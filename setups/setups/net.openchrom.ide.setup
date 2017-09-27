@@ -66,8 +66,8 @@
     <setupTask
         xsi:type="setup:EclipseIniTask"
         id=""
-        option="-Dmake.eclipse.great.again"
-        value="=${make.eclipse.great.again.option}"
+        option="-Dchoose.installation"
+        value="=${choose.installation.option}"
         vm="true">
       <description></description>
     </setupTask>
@@ -228,23 +228,23 @@
         label="Get coffee served during installation:"/>
     <setupTask
         xsi:type="setup:VariableTask"
-        name="make.eclipse.great.again.option"
-        defaultValue="little"
+        name="choose.installation.option"
+        defaultValue="minimal"
         storageURI="scope://Workspace"
-        label="State of the matter">
+        label="Choose Plugin Set for installation">
       <choice
-          value="little"
-          label="I hate eclipse a little bit"/>
+          value="minimal"
+          label="Only OpenChrom Core functionality"/>
       <choice
-          value="more"
-          label="I hate eclipse quite substantially"/>
+          value="community"
+          label="All plugins included in the community version"/>
       <choice
-          value="alot"
-          label="Eclipse is the worst crap ever"/>
+          value="enterprise"
+          label="Full set of projects, including restricted enterprise plugins"/>
       <choice
-          value="None"
-          label="None"/>
-      <description>How great</description>
+          value="noknime"
+          label="All community plugins except knime"/>
+      <description>Selection mechanism for installations</description>
     </setupTask>
 
 
