@@ -472,6 +472,8 @@
       <repository
           url="http://download.eclipse.org/efxclipse/updates-released/2.4.0/site"/>
       <repository
+          url="http://regex-util.sourceforge.net/update"/>
+      <repository
           url="http://update.knime.org/analytics-platform/3.3"/>
       <repository
           url="http://babelserver.org/mylyn-bitbucket"/>
