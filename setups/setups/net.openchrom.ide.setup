@@ -228,7 +228,7 @@
         xsi:type="setup:VariableTask"
         name="choose.installation.option"
         defaultValue="minimal"
-        storageURI="scope://Workspace"
+        storageURI="scope://Installation"
         label="Choose Plugin Set for installation">
       <choice
           value="minimal"
@@ -280,7 +280,7 @@
     <setupTask
         xsi:type="setup:ResourceCreationTask"
         excludedTriggers="BOOTSTRAP"
-        filter="(choose.installation=&quot;minimal&quot;)"
+        filter="(useroption.create.resource=&quot;minimal&quot;)"
         content="This resource is created because of installation option"
         targetURL="${workspace.location|uri}/testos.txt"
         encoding="UTF-8">
