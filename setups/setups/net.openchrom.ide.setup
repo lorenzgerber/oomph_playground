@@ -57,7 +57,6 @@
     </setupTask>
     <setupTask
         xsi:type="setup:EclipseIniTask"
-        id=""
         option="-Duseroption.create.resource"
         value="=${useroption.create.resource.option}"
         vm="true">
@@ -65,7 +64,6 @@
     </setupTask>
     <setupTask
         xsi:type="setup:EclipseIniTask"
-        id=""
         option="-Dchoose.installation"
         value="=${choose.installation.option}"
         vm="true">
@@ -246,8 +244,6 @@
           label="All community plugins except knime"/>
       <description>Selection mechanism for installations</description>
     </setupTask>
-
-
   </setupTask>
   <setupTask
       xsi:type="setup:CompoundTask"
@@ -278,6 +274,15 @@
         filter="(useroption.create.resource=true)"
         content="This resource was created you checked the variable&#xA;which caused the vm option to be set to true&#xA;which caused the filter of the resource creation task to match."
         targetURL="${workspace.location|uri}/test.txt"
+        encoding="UTF-8">
+      <description>This task is executed depending on the user's choice on the variable page.</description>
+    </setupTask>
+    <setupTask
+        xsi:type="setup:ResourceCreationTask"
+        excludedTriggers="BOOTSTRAP"
+        filter="(choose.installation=&quot;minimal&quot;)"
+        content="This resource is created because of installation option"
+        targetURL="${workspace.location|uri}/testos.txt"
         encoding="UTF-8">
       <description>This task is executed depending on the user's choice on the variable page.</description>
     </setupTask>
