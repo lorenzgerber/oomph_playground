@@ -226,15 +226,17 @@
         label="Get coffee served during installation:"/>
     <setupTask
         xsi:type="setup:VariableTask"
+        type="BOOLEAN"
         name="choose.installation.option"
-        defaultValue="minimal"
+        value=""
+        defaultValue="false"
         storageURI="scope://Installation"
         label="Choose Plugin Set for installation">
       <choice
-          value="minimal"
+          value="true"
           label="Only OpenChrom Core functionality"/>
       <choice
-          value="community"
+          value="false"
           label="All plugins included in the community version"/>
       <choice
           value="enterprise"
@@ -242,7 +244,7 @@
       <choice
           value="noknime"
           label="All community plugins except knime"/>
-      <description>Selection mechanism for installations</description>
+      <description></description>
     </setupTask>
   </setupTask>
   <setupTask
