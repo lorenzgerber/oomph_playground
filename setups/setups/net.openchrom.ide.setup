@@ -227,7 +227,6 @@
     <setupTask
         xsi:type="setup:VariableTask"
         name="choose.installation.option"
-        value=""
         defaultValue="minimal"
         storageURI="scope://Installation"
         label="Choose Plugin Set for installation">
@@ -243,7 +242,7 @@
       <choice
           value="noknime"
           label="All community plugins except knime"/>
-      <description></description>
+      <description>Selection mechanism for installations</description>
     </setupTask>
   </setupTask>
   <setupTask
