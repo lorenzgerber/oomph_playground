@@ -226,7 +226,6 @@
         label="Get coffee served during installation:"/>
     <setupTask
         xsi:type="setup:VariableTask"
-        type="BOOLEAN"
         name="choose.installation.option"
         value=""
         defaultValue="false"
