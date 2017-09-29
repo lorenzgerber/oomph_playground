@@ -436,8 +436,6 @@
       <requirement
           name="org.eclipse.fx.ide.gmod.feature.feature.group"/>
       <requirement
-          name="com.ess.regexutil.feature.group"/>
-      <requirement
           name="org.knime.features.build.feature.group"/>
       <requirement
           name="org.knime.features.ext.dl4j.testing.feature.group"/>
@@ -471,8 +469,6 @@
           url="http://download.eclipse.org/rcptt/release/2.1.0/repository"/>
       <repository
           url="http://download.eclipse.org/efxclipse/updates-released/2.4.0/site"/>
-      <repository
-          url="http://regex-util.sourceforge.net/update"/>
       <repository
           url="http://update.knime.org/analytics-platform/3.3"/>
       <repository
