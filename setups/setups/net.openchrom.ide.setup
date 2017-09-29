@@ -280,7 +280,7 @@
     <setupTask
         xsi:type="setup:ResourceCreationTask"
         excludedTriggers="BOOTSTRAP"
-        filter="(useroption.create.resource=&quot;minimal&quot;)"
+        filter="(useroption.create.resource=minimal)"
         content="This resource is created because of installation option"
         targetURL="${workspace.location|uri}/testos.txt"
         encoding="UTF-8">
