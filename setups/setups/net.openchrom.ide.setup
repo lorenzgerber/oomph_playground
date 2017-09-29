@@ -227,11 +227,11 @@
     <setupTask
         xsi:type="setup:VariableTask"
         name="choose.installation.option"
-        defaultValue="minimal"
+        defaultValue="false"
         storageURI="scope://Installation"
         label="Choose Plugin Set for installation">
       <choice
-          value="minimal"
+          value="true"
           label="Only OpenChrom Core functionality"/>
       <choice
           value="community"
@@ -280,7 +280,7 @@
     <setupTask
         xsi:type="setup:ResourceCreationTask"
         excludedTriggers="BOOTSTRAP"
-        filter="(useroption.create.resource=minimal)"
+        filter="(useroption.create.resource=true)"
         content="This resource is created because of installation option"
         targetURL="${workspace.location|uri}/testos.txt"
         encoding="UTF-8">
